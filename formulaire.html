@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing:  border-box;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      body{
+        background: linear-gradient(#141e30, #243b55);
+        font-size: 14px;
+        line-height: 22px;
+        font-family: sans-serif;
+      }
+
+      .bold{
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      #Base {
+        float: left;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        margin-left: 50px;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+
+
+      }
+
+      .Base input{
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+      }
+
+      #formulaire{
+        width: 500px;
+        height: auto;
+        display: block;
+        margin: 50px auto;
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+      }
+
+      #form_head {
+        width: 500px;
+        height: 40px;
+        padding: 0 25px;
+
+      }
+
+      .formulaire h2,p{
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #form_center {
+        width: 500px;
+        height: 400px;
+        padding: 0 25px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+      }
+
+      .form_center input{
+        width: 70%;
+        height: 25%;
+        margin-left: 50px;
+        font-size: 16px;
+      }
+
+      #form_bottom {
+        width: 500px;
+        height: 120px;
+        padding: 0 25px;
+      }
+
+      .form_bottom input{
+        left: -100%;
+        width: 30%;
+        height: 40%;
+        font-size: 16px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <form Method="POST" action="Affichage2.php">
+      <div id="Base" class="Base">
+        <input type="submit" name="Affichage" value="Afficher La base">
+      </div>
+      <div id="formulaire" class="formulaire">
+        <div id="form_head" class="form_head">
+          <h2><br> Formulaire d'insertion</h2>
+        </div>
+        <div id="form_center" class="form_center">
+          <table border=0 style="width:100%;height:100%;color:#fff">
+            <tr>
+              <th>* Nom</th>
+              <td><input type="text" name="nom" value=""> </td>
+            </tr>
+            <tr>
+              <th>* Prenom</th>
+              <td><input type="text" name="prenom" value=""> </td>
+            </tr>
+            <tr>
+              <th>* Telephone</th>
+              <td><input type="text" name="tel" value=""> </td>
+            </tr>
+            <tr>
+              <th>* Email</th>
+              <td><input type="text" name="mail" value=""> </td>
+            </tr>
+          </table>
+        </div>
+        <div id="form_bottom" class="form_bottom">
+          <input type="submit" name="submit" value="Submit">
+          <p> *Ces champs sont obligatoires </p>
+        </div>
+      </div>
+    </form>
+
+  </body>
+</html>
